@@ -20,30 +20,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class CRUDOPerations {
-	   public static String addEmployeattendence(HttpServletRequest req, HttpServletResponse res) throws Exception
-		{
-			String status=null;
-			Connection conn = null;
-			PreparedStatement ps = null;
-			String dayspresent=null;
-			String sql=null;
-			int addattendenceresult=0;
-			
-			try{  
-				dayspresent = req.getParameter("dayspresent");
-	            conn=DbPlugin.getConnection();  
-	            
-			}catch(Exception ex){
-	        	ex.printStackTrace();
-	        	System.out.println("exception cated for employyeeattendence");
-	        } 
-			
-			return status;
-		   
-		}
+
 
 	public static String AddEmployee(HttpServletRequest req, HttpServletResponse res) throws Exception
-	{	Employee employee = null;
+	{	System.out.println("git usage..");
+		Employee employee = null;
 
 		String ename=null;
 		String dob=null;
